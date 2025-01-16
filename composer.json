@@ -1,15 +1,17 @@
 {
   "name": "desi/testing_php",
+  "description": "Testing en PHP con PHPUnit course from EscuelaIT",
+  "type": "project",
+  "_comment1": "The autoload namespace was changed to App\\",
+  "_comment2": "The autoload-dev namespace was created as Tests\\, pointing to the tests folder",
   "autoload": {
     "psr-4": {
-      "App\\": "src/",
-      "//comentario": "Changing the basic namespace to 'App', as per the PSR-4 standard, and pointing it to the 'src' folder"
+      "App\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Tests\\": "tests/",
-      "//comentario": "Changing the basic namespace to 'Tests', as per the PSR-4 standard, and pointing it to the 'tests' folder"
+      "Tests\\": "tests/"
     }
   },
   "authors": [
