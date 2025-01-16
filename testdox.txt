@@ -1,0 +1,7 @@
+Factorial (Tests\Factorial)
+ [x] Factorial one
+ [x] Factorial two
+ [x] Factorial zero
+ [x] Factorial negative number
+ [x] Factorial of ten
+
