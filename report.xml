@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="CLI Arguments" tests="5" assertions="5" errors="0" failures="0" skipped="0" time="0.019309">
+    <testsuite name="Tests\FactorialTest" file="C:\Users\DESI\proxectos\testing_php\tests\FactorialTest.php" tests="5" assertions="5" errors="0" failures="0" skipped="0" time="0.019309">
+      <testcase name="testFactorialOne" file="C:\Users\DESI\proxectos\testing_php\tests\FactorialTest.php" line="10" class="Tests\FactorialTest" classname="Tests.FactorialTest" assertions="1" time="0.017341"/>
+      <testcase name="testFactorialTwo" file="C:\Users\DESI\proxectos\testing_php\tests\FactorialTest.php" line="16" class="Tests\FactorialTest" classname="Tests.FactorialTest" assertions="1" time="0.000499"/>
+      <testcase name="testFactorialZero" file="C:\Users\DESI\proxectos\testing_php\tests\FactorialTest.php" line="22" class="Tests\FactorialTest" classname="Tests.FactorialTest" assertions="1" time="0.000473"/>
+      <testcase name="testFactorialNegativeNumber" file="C:\Users\DESI\proxectos\testing_php\tests\FactorialTest.php" line="28" class="Tests\FactorialTest" classname="Tests.FactorialTest" assertions="1" time="0.000500"/>
+      <testcase name="testFactorialOfTen" file="C:\Users\DESI\proxectos\testing_php\tests\FactorialTest.php" line="34" class="Tests\FactorialTest" classname="Tests.FactorialTest" assertions="1" time="0.000496"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
