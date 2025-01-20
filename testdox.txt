@@ -1,12 +1,8 @@
-Read Time Calculator (Tests\ReadTimeCalculator)
- [x] Read time in minutes with data set "Testing minutes 1"
- [x] Read time in minutes with data set "Testing minutes 2"
- [x] Read time in minutes with data set "Testing minutes 3"
- [x] Read time in minutes with data set "Testing minutes 4"
- [x] Read time in minutes with data set "Testing minutes 5"
- [x] Read time in hours with data set "Testing hours 1"
- [x] Read time in hours with data set "Testing hours 2"
- [x] Read time in hours with data set "Testing hours 3"
- [x] Read time in hours with data set "Testing hours 4"
- [x] Read time in hours with data set "Testing hours 5"
+Taxes Calculator (Tests\TaxesCalculator)
+ [x] Calculates correct iva for given value with data set "Tax 21% of 100"
+ [x] Calculates correct iva for given value with data set "Tax of zero"
+ [x] Calculates correct iva for given value with data set "Tax rounded"
+ [x] Calculates correct iva plus taxes for given value with data set "Tax 21% of 100"
+ [x] Calculates correct iva plus taxes for given value with data set "Tax of zero"
+ [x] Calculates correct iva plus taxes for given value with data set "Tax rounded"
 
