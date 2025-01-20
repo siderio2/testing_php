@@ -1,7 +1,12 @@
-Factorial (Tests\Factorial)
- [x] Factorial one
- [x] Factorial two
- [x] Factorial zero
- [x] Factorial negative number
- [x] Factorial of ten
+Read Time Calculator (Tests\ReadTimeCalculator)
+ [x] Read time in minutes with data set "Testing minutes 1"
+ [x] Read time in minutes with data set "Testing minutes 2"
+ [x] Read time in minutes with data set "Testing minutes 3"
+ [x] Read time in minutes with data set "Testing minutes 4"
+ [x] Read time in minutes with data set "Testing minutes 5"
+ [x] Read time in hours with data set "Testing hours 1"
+ [x] Read time in hours with data set "Testing hours 2"
+ [x] Read time in hours with data set "Testing hours 3"
+ [x] Read time in hours with data set "Testing hours 4"
+ [x] Read time in hours with data set "Testing hours 5"
 
