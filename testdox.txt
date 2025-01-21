@@ -1,8 +1,4 @@
-Taxes Calculator (Tests\TaxesCalculator)
- [x] Calculates correct iva for given value with data set "Tax 21% of 100"
- [x] Calculates correct iva for given value with data set "Tax of zero"
- [x] Calculates correct iva for given value with data set "Tax rounded"
- [x] Calculates correct iva plus taxes for given value with data set "Tax 21% of 100"
- [x] Calculates correct iva plus taxes for given value with data set "Tax of zero"
- [x] Calculates correct iva plus taxes for given value with data set "Tax rounded"
+Shopping Cart (Tests\ShoppingCart)
+ [x] Empty cart returns false on has products
+ [x] Not empty cart returns true on has products
 
