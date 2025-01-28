@@ -17,5 +17,19 @@ class ShoppingCart
   {
     $this->products[] = $product;
   }
+
+  public function removeProduct(Product $product): void
+  {
+    $index = array_search(needle: $product, haystack: $this->products, strict: true);
+    if ($index === false) {
+      throw new \InvalidArgumentException(message: "El producto no se encuentra en el carrito");
+    }
+    unset($this->products[$index]);
+  }
+
+  public function getProducts(): array
+  {
+    return $this->products;
+  }
 }
 ?>
