@@ -4,6 +4,7 @@ namespace Tests;
 
 use App\Product;
 use App\ShoppingCart;
+use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\Test;
 
@@ -67,6 +68,17 @@ class ShoppingCartTest extends TestCase
     $this->cart->removeProduct(product: $screen);
     $this->assertCount(expectedCount: 2, haystack: $this->cart->getProducts());
     $this->assertNotContains(needle: $screen, haystack: $this->cart->getProducts());
+  }
+
+  #[Test]
+  public function removeProductThatIsNotInCartThrowsException(): void
+  {
+    $this->cart->addProduct(product: new Product(name: 'Ratón ergonómico', price: 80));
+    $this->cart->addProduct(product: new Product(name: 'Teclado inalámbrico', price: 105));
+    $screen = new Product(name: 'Pantalla 4k', price: 250);
+    $this->expectException(exception: InvalidArgumentException::class);
+    $this->expectExceptionMessage(message: "El producto no se encuentra en el carrito");
+    $this->cart->removeProduct(product: $screen);
   }
 
   #[Test]

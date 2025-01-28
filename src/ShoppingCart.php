@@ -2,7 +2,7 @@
 
 namespace App;
 
-use PHPUnit\Framework\Constraint\IsEmpty;
+use InvalidArgumentException;
 
 class ShoppingCart
 {
@@ -22,7 +22,7 @@ class ShoppingCart
   {
     $index = array_search(needle: $product, haystack: $this->products, strict: true);
     if ($index === false) {
-      throw new \InvalidArgumentException(message: "El producto no se encuentra en el carrito");
+      throw new InvalidArgumentException(message: "El producto no se encuentra en el carrito");
     }
     unset($this->products[$index]);
   }

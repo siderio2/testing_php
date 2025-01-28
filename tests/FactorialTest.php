@@ -3,6 +3,7 @@
 namespace Tests;
 
 use App\Factorial;
+use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
 class FactorialTest extends TestCase
@@ -19,28 +20,31 @@ class FactorialTest extends TestCase
     $this->factorial = null;
   }
 
-  public function testFactorialOne()
+  public function testFactorialOne(): void
   {
-    $this->assertEquals(1, $this->factorial->calculate(1));
+    $this->assertEquals(expected: 1, actual: $this->factorial->calculate(input: 1));
   }
 
-  public function testFactorialTwo()
+  public function testFactorialTwo(): void
   {
-    $this->assertEquals(2, $this->factorial->calculate(2));
+    $this->assertEquals(expected: 2, actual: $this->factorial->calculate(input: 2));
   }
 
-  public function testFactorialZero()
+  public function testFactorialZero(): void
   {
-    $this->assertEquals(1, $this->factorial->calculate(0));
+    $this->assertEquals(expected: 1, actual: $this->factorial->calculate(input: 0));
   }
 
-  public function testFactorialNegativeNumber()
+  public function testFactorialNegativeNumberThrowsException(): void
   {
-    $this->assertEquals(-1, $this->factorial->calculate(-5));
+    $this->expectException(exception: InvalidArgumentException::class);
+    $this->factorial->calculate(input: -5);
   }
 
-  public function testFactorialOfTen()
+  public function testFactorialOfTen(): void
   {
-    $this->assertEquals(3628800, $this->factorial->calculate(10));
+    $this->assertEquals(expected: 3628800, actual: $this->factorial->calculate(input: 10));
   }
+
+
 }
