@@ -2,7 +2,8 @@
 
 namespace App;
 
-class ReadTimeCalculator {
+class ReadTimeCalculator
+{
   private string $text;
   private int $wordsPerMinute;
 
@@ -20,8 +21,9 @@ class ReadTimeCalculator {
   public function getReadTimeInHours(): string
   {
     $minutes = $this->getReadTimeInMinutes();
-    $hours = intdiv(num1: $minutes, num2: 60);
-    $remainingMinutes = $minutes % 60;
-    return sprintf('%d:%02d', $hours, $remainingMinutes);
+    $timeCalculator = new TimeCalculator();
+    [$hours, $minutes] = $timeCalculator->convertMinutesToHoursAndMinutes(minutes: $minutes);
+    return vsprintf(format: '%d:%02d', values: [$hours, $minutes]);
   }
+
 }

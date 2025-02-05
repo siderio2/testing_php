@@ -1,10 +1,19 @@
-Shopping Cart (Tests\ShoppingCart)
- [x] Empty cart returns false on has products
- [x] Not empty cart returns true on has products
- [x] Cart has an empty array of products
- [x] Cart has correct number of products
- [x] Cart has an added product
- [x] Cart has not a removed product
- [x] Remove product that is not in cart throws exception
- [x] Cart has only products
+Read Time Calculator (Tests\ReadTimeCalculator)
+ [x] Read time in minutes with data set "Testing minutes 1"
+ [x] Read time in minutes with data set "Testing minutes 2"
+ [x] Read time in minutes with data set "Testing minutes 3"
+ [x] Read time in minutes with data set "Testing minutes 4"
+ [x] Read time in minutes with data set "Testing minutes 5"
+ [x] Read time in hours with data set "Testing hours 1"
+ [x] Read time in hours with data set "Testing hours 2"
+ [x] Read time in hours with data set "Testing hours 3"
+ [x] Read time in hours with data set "Testing hours 4"
+ [x] Read time in hours with data set "Testing hours 5"
+
+Time Calculator (Tests\TimeCalculator)
+ [x] Convert minutes to hours and minutes returns an array
+ [x] Convert 60 minutes in one hour with data set "zero time"
+ [x] Convert 60 minutes in one hour with data set "60 minutes to one hour"
+ [x] Convert 60 minutes in one hour with data set "30 minutes to 30 minutes"
+ [x] Convert 60 minutes in one hour with data set "365 minutes to 6 hours and 5 minutes"
 
