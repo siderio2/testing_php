@@ -1,3 +1,18 @@
+Factorial (Tests\Factorial)
+ [x] Factorial one
+ [x] Factorial two
+ [x] Factorial zero
+ [x] Factorial negative number throws exception
+ [x] Factorial of ten
+
+Product (Tests\Product)
+ [x] Product has numeric price
+ [x] Product has assigned price
+ [x] Product taxes is float
+ [x] Product taxes is correct
+ [x] Product plus taxes is correct
+ [x] Product summary contains its name
+
 Read Time Calculator (Tests\ReadTimeCalculator)
  [x] Read time in minutes with data set "Testing minutes 1"
  [x] Read time in minutes with data set "Testing minutes 2"
@@ -9,6 +24,25 @@ Read Time Calculator (Tests\ReadTimeCalculator)
  [x] Read time in hours with data set "Testing hours 3"
  [x] Read time in hours with data set "Testing hours 4"
  [x] Read time in hours with data set "Testing hours 5"
+
+Shopping Cart (Tests\ShoppingCart)
+ [x] Empty cart returns false on has products
+ [x] Not empty cart returns true on has products
+ [x] Cart has an empty array of products
+ [x] Cart has correct number of products
+ [x] Cart has an added product
+ [x] Cart has not a removed product
+ [x] Remove product that is not in cart throws exception
+ [x] Cart has only products
+ [x] Checkout mark cart as paid
+
+Taxes Calculator (Tests\TaxesCalculator)
+ [x] Calculates correct iva for given value with data set "Tax 21% of 100"
+ [x] Calculates correct iva for given value with data set "Tax of zero"
+ [x] Calculates correct iva for given value with data set "Tax rounded"
+ [x] Calculates correct iva plus taxes for given value with data set "Tax 21% of 100"
+ [x] Calculates correct iva plus taxes for given value with data set "Tax of zero"
+ [x] Calculates correct iva plus taxes for given value with data set "Tax rounded"
 
 Time Calculator (Tests\TimeCalculator)
  [x] Convert minutes to hours and minutes returns an array
